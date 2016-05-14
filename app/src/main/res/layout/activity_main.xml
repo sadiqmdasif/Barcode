@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:gravity="center"
+    android:weightSum="1">
+    <com.sadiqmdasif.barcode.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="446dp"
+        android:layout_height="459dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.42">
+
+        <com.sadiqmdasif.barcode.GraphicOverlay
+            android:id="@+id/faceOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:focusable="true" />
+
+    </com.sadiqmdasif.barcode.CameraSourcePreview>
+
+    <TextView
+        android:layout_width="338dp"
+        android:layout_height="198dp"
+        android:id="@+id/textView"
+        android:text="no data"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
